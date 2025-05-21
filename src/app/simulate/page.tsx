@@ -44,8 +44,6 @@ export default function Simulate() {
     const creditValue = formData.get("credito") as string;
     if (!type || !creditValue) return;
 
-    const parsedCredit = parseInt(creditValue.split(',')[0].replace(/\./g, ''), 10);
-
     setIsLoading(true);
 
     setTimeout(() => {
@@ -59,21 +57,6 @@ export default function Simulate() {
     router.push(`/proposal?type=${type}&credit=0`);
   };
   
-  // Novo estado para controle do slideshow
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const bankImages = [
-    santander,
-    bradesco,
-    itau,
-    caixa
-  ]; // Substitua pelas suas URLs
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % bankImages.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 text-gray-800">
