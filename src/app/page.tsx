@@ -1,6 +1,3 @@
-import Image from "next/image";
-import CreditCard from '../assets/CreditCard.svg';
-import lambo from '../assets/lambo.jpg';
 import Link from 'next/link';
 import 'boxicons/css/boxicons.min.css';
 

@@ -3,9 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Image from "next/image";
-import CreditCard from '../assets/CreditCard.svg';
-import lambo from '../assets/lambo.jpg';
-import Link from 'next/link';
 import 'boxicons/css/boxicons.min.css';
 import santander from '../../assets/santander.png';
 import bradesco from '../../assets/bradesco.jpeg';
